@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+      --white: #FFFFFF;
+      --black: #000000;
+      --very-light-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #ACD9B2;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: 
+      linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+
+    }
+
+
+        .sidebar {
+            position: relative;
+            background-image: linear-gradient(
+      150deg,
+      var(--hospital-green),
+      rgb(91, 207, 169),
+      #00DDFF
+    );
+            color: var(--white);
+            width: 300px; /* Ancho del recuadro derecho */
+            height: 400px;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            font-size: 16px;
+            transition: .3s ;
+            margin-top: 60px;
+            margin-right: 120px;
+        }
+    .sidebar div{
+        background:
+        linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+        ;
+        padding: 8px 36px;
+        border-radius: 8px;
+        transition: .3s;
+        text-decoration: none;
+        color: var(--hospital-green);
+        }
+        
+        .sidebar:hover {
+            transform: scale(1.2); /* Agrandar en un 10% */
+        }
+        .imagen img {
+            margin-top: 60px;
+            position: relative;
+            width: 0; /* Inicialmente oculta la imagen */
+            height: auto;
+            transition: width 2s ease-in-out;
+        }
+        .imagen-show img {
+            width: 40%;
+        }
+
+        @media (max-width: 640px){
+            .sidebar {
+                margin-right: 18PX;
+                width: 80%;
+            }
+            .imagen{
+                display: none;
+            }
+            
+        }
+    </style>
+
+</head>
+
+    <main>
+        <body>
+            <div class="back-image">
+                <div class="sidebar" style="float: right;">
+                    <div>
+                        <h2>About</h2>
+                        <p>Esta es información sobre mí o sobre la página.</p>
+                    </div>            
+                </div>
+                <div class="imagen imagen-show">
+                    <img src="./public/para la portada.png" alt="" style="float: left;">
+                </div>
+            </div>
+    </main>
+    
+</body>
+</html>
